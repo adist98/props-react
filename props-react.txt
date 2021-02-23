@@ -1,0 +1,25 @@
+This is just a note for myself to understand props in reactjs
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+Pass a name from the app component[Parent] to the greet component[Child]
+
+
+"To specify props for a components, we specify them as attributes;"
+
+```
+<Greet name = "Aditya"/>
+
+```
+
+
+in Greet.js
+
+```
+// we can name this anything, but the convention is to name it as props //
+function Greet(props){
+  console.log(props)
+  return <h1> This is {props.name} </h1>
+  // {} we use this because we dont want to treat props.name as a text //
+  // {} this is a feature of JSX and is used quite a lot in REACT applications //
+}
